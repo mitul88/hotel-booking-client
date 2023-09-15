@@ -1,3 +1,4 @@
+import { Button } from '@mui/material'
 import React from 'react'
 
 const MainNavigation = () => {
@@ -7,7 +8,7 @@ const MainNavigation = () => {
         HOTEL.COM
       </div>
       <nav>
-
+        <Button className='hover:bg-green-300'>Hi There</Button>
       </nav>
     </header>
   )

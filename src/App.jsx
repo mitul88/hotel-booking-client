@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import RootPage from './pages/Root';
-
+import { StyledEngineProvider } from '@mui/material';
 
 export const router = createBrowserRouter([
   {
@@ -18,7 +18,9 @@ export const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <StyledEngineProvider injectFirst>
+      <RouterProvider router={router} />
+    </StyledEngineProvider>
   )
 }
 

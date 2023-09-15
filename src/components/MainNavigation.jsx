@@ -7,7 +7,7 @@ const MainNavigation = () => {
         HOTEL.COM
       </div>
       <nav>
-        
+
       </nav>
     </header>
   )

@@ -3,13 +3,24 @@ import React from 'react'
 
 const MainNavigation = () => {
   return (
-    <header>
+    <header className='w-screen h-[80px] flex flex-row justify-between px-20 py-5'>
       <div>
         HOTEL.COM
       </div>
-      <nav>
-        <Button className='hover:bg-green-300'>Hi There</Button>
-      </nav>
+      <div className='flex justify-between min-w-[400px]'>
+        <nav>
+          <Button className=''>List your property</Button>
+        </nav>
+        <nav>
+          <Button
+            
+            className=''
+          >Sign in</Button>
+        </nav>
+        <nav>
+          <Button className=''>Register</Button>
+        </nav>
+      </div>
     </header>
   )
 }

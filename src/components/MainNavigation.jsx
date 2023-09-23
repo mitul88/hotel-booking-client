@@ -24,7 +24,7 @@ const MainNavigation = () => {
             variant='contained'
             component={Link}
             disableRipple
-            className='text-white bg-red-500 hover:bg-red-400'
+            className='text-white bg-red-500 hover:bg-red-600 hover:text-white'
             to='register'
           >Register</Button>
         </nav>

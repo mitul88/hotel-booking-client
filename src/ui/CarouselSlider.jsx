@@ -12,9 +12,9 @@ const Item = ({item}) => {
                 alt=""
                 className='object-fill w-full h-full'
              />
-                <div className='p-5 absolute opacity-90 top-40 left-0 bg-red-400'>
-                    <h2 className="text-3xl text-black">{item.title}</h2>
-                    <p className='text-md'>{item.desc}</p>
+                <div className='p-5 absolute opacity-90 top-0 left-0 bg-red-500'>
+                    <h2 className="text-3xl text-white">{item.title}</h2>
+                    <p className='text-md text-white'>{item.desc}</p>
                 </div>
             </div>
         </Paper>

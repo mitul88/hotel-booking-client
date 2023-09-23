@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import LocationListItem from './LocationListItem'
+import CarouselSlider from '../../ui/CarouselSlider'
+
+import { hotelSliderData } from '../../mock/data'
 
 const locationListData = [
     {
@@ -24,8 +27,10 @@ const locationListData = [
 const RecomendationSection = () => {
   return (
     <section className='w-full py-10 lg:py-20 bg-slate-200 '>
-        <div className="max-w-[1180px] mx-auto flex justify-between gap-5 overflow-x-auto">
-            <div className="w-2/3 h-[500px] bg-blue-400"></div>
+        <div className="max-w-[1180px] mx-auto flex justify-between gap-5 overflow-hidden">
+            <div className="w-2/3 h-[500px] bg-blue-400">
+                <CarouselSlider items={hotelSliderData} />
+            </div>
             <div className="w-1/3 h-[500px] bg-white">
                 <div className="bg-red-400 w-full h-[80px] py-3 px-10">
                     <h3 className="text-2xl">Offered Locations</h3>

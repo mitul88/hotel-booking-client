@@ -1,5 +1,6 @@
 import { Button } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MainNavigation = () => {
   return (
@@ -21,8 +22,10 @@ const MainNavigation = () => {
         <nav>
           <Button 
             variant='contained'
-            className='text-white bg-black hover:bg-gray-900'
+            component={Link}
             disableRipple
+            className='text-white bg-red-500 hover:bg-red-400'
+            to='register'
           >Register</Button>
         </nav>
       </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const LocationListItem = ({location}) => {
   return (
-    <Link className="w-full h-[80px] flex bg-yellow-100 hover:bg-yellow-200 ease-in duration-150">
+    <Link className="w-full h-[80px] flex bg-white border border-gray-200 shadow shadow-md hover:shadow-lg ease-in duration-150">
         <div className="w-[80px]">
             <img src={location.img} alt="" className='bg-cover h-full w-full' />
         </div>

@@ -31,7 +31,7 @@ const RecomendationSection = () => {
             <div className="w-2/3 h-[500px]">
                 <CarouselSlider items={hotelSliderData} />
             </div>
-            <div className="w-1/3 h-[500px] bg-gray-700/75 rounded-lg">
+            <div className="w-1/3 h-[500px] bg-white rounded-lg">
                 <div className="bg-red-500 w-full h-[80px] py-3 px-10 rounded-t-lg">
                     <h3 className="text-2xl">Offered Locations</h3>
                     <p className="text-sm">We have locations in major cities of bangladesh</p>

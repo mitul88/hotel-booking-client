@@ -1,6 +1,6 @@
 import { Checkbox, FormControlLabel, FormGroup } from '@mui/material'
 
-const CheckboxFilters = () => {
+const PopularFilter = () => {
   return (
     <FormGroup>
         <FormControlLabel control={<Checkbox />} label="Parking" />
@@ -12,4 +12,4 @@ const CheckboxFilters = () => {
   )
 }
 
-export default CheckboxFilters
+export default PopularFilter

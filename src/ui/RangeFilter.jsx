@@ -3,10 +3,10 @@ import { Slider } from '@mui/material'
 
 const RangeFilter = () => {
 
-    const [value, setValue] = useState([20, 37]);
+    const [value, setValue] = useState([5000, 8000]);
 
     function valuetext(value) {
-        return `${value}°C`;
+        return `${value}`;
     }
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -16,8 +16,10 @@ const RangeFilter = () => {
     <div className='w-full mx-auto'>
         <div className="w-full">
           <Slider
-              getAriaLabel={() => 'Temperature range'}
+              getAriaLabel={() => 'Cost range'}
               value={value}
+              min={500}
+              max={12000}
               onChange={handleChange}
               valueLabelDisplay="auto"
               getAriaValueText={valuetext}

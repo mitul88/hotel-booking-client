@@ -22,7 +22,7 @@ const FilterOptions = () => {
         </div>
       </CardComponent>
       <CardComponent>
-        <h4 className="text-gray-600 mb-3 font-bold px-5">Popular filters</h4>
+        <h4 className="text-gray-600 mb-3 font-bold px-5">Property Rating</h4>
         <hr className='border border-gray-200 mb-3'/>
         <div className='px-5'>
           <RatingFilters />

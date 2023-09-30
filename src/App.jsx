@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import RootPage from './pages/Root';
 import { StyledEngineProvider } from '@mui/material';
+import PropertyListPage from './pages/PropertyList';
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ export const router = createBrowserRouter([
         {
           index: true,
           element: <Home />
+        },
+        {
+          path: "rooms",
+          element: <PropertyListPage />
         }
       ]
   },

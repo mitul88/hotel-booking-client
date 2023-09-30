@@ -15,7 +15,7 @@ const MainNavigation = () => {
         <nav>
           <Button
             variant='contained'
-            className='text-white bg-black hover:bg-gray-900'
+            className='text-white bg-gray-900/75 hover:bg-gray-800/75'
             disableRipple
           >Sign in</Button>
         </nav>

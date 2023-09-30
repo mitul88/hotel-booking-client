@@ -26,14 +26,13 @@ const locationListData = [
 
 const RecomendationSection = () => {
   return (
-    // <section className='w-full py-10 lg:py-20 bg-gradient-to-br from-gray-200 from-10% via-gray-100 via-30% to-bottom-right-gray-300 to-98%'>
-    <section className='w-full py-10 lg:py-20 bg-gray-200'>
+    <section className='w-full py-10 lg:py-20'>
         <div className="max-w-[1180px] mx-auto flex justify-between gap-5 overflow-hidden">
             <div className="w-2/3 h-[500px]">
                 <CarouselSlider items={hotelSliderData} />
             </div>
-            <div className="w-1/3 h-[500px] bg-white">
-                <div className="bg-red-500 w-full h-[80px] py-3 px-10">
+            <div className="w-1/3 h-[500px] bg-gray-700/75 rounded-lg">
+                <div className="bg-red-500 w-full h-[80px] py-3 px-10 rounded-t-lg">
                     <h3 className="text-2xl">Offered Locations</h3>
                     <p className="text-sm">We have locations in major cities of bangladesh</p>
                 </div>

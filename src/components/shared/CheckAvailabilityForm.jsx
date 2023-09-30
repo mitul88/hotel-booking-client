@@ -4,16 +4,15 @@ import React from 'react'
 const CheckAvailabilityForm = () => {
   return (
     <form>
-        <div className='flex gap-2 p-2 rounded-md bg-yellow-400'>
-            <FormControl>
-                {/* <TextField size='small' label="Location" variant="outlined" className='bg-white' /> */}
+        <div className='flex gap-2 p-2 rounded-md bg-yellow-400 mx-auto w-fit'>
+            <FormControl size='small'>
                 <InputLabel id="location">Location</InputLabel>
                 <Select
                     labelId="location"
                     id="locationDropdown"
                     // value={2}
                     label="Location"
-                    // size='small'
+                    size='small'
                     sx={{
                         backgroundColor: '#fff',
                         width: "200px"
@@ -25,21 +24,30 @@ const CheckAvailabilityForm = () => {
                     <MenuItem value={4}>Cox's Bazar</MenuItem>
                 </Select>
             </FormControl>
-            <FormControl>
-                <TextField label="Check in" variant="outlined" className='bg-white' />
+            <FormControl size='small'>
+                <TextField 
+                    label="Check in" 
+                    variant="outlined" 
+                    className='bg-white'
+                    size='small' 
+                />
             </FormControl>
-            <FormControl>
-                <TextField label="Check out" variant="outlined" className='bg-white' />
+            <FormControl size='small'>
+                <TextField 
+                    label="Check out" 
+                    variant="outlined" 
+                    className='bg-white'
+                    size='small' 
+                />
             </FormControl>
-            <FormControl>
-                {/* <TextField size='small' label="Location" variant="outlined" className='bg-white' /> */}
+            <FormControl size='small'>
                 <InputLabel id="bedType">Bed Type</InputLabel>
                 <Select
                     labelId="bedType"
                     id="bedTypeDropdown"
                     // value={2}
                     label="bedType"
-                    // size='small'
+                    size='small'    
                     sx={{
                         backgroundColor: '#fff',
                         width: "200px"
@@ -49,7 +57,7 @@ const CheckAvailabilityForm = () => {
                     <MenuItem value={2}>Double</MenuItem>
                 </Select>
             </FormControl>
-            <Button type='submit' className='px-5 bg-red-500 text-white hover:bg-white hover:text-black'>Check</Button>
+            <Button type='submit' size='small' className='px-5 bg-red-500 font-bold tracking-wider text-white hover:bg-white hover:text-black'>Check</Button>
         </div>
     </form>
   )

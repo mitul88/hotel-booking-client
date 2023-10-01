@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom'
 const MainNavigation = () => {
   return (
     <header className='w-screen h-[80px] flex flex-row justify-between px-20 py-5 bg-blue-900'>
-      <div className='flex items-center'>
-        HOTEL.COM
-      </div>
+      <Link to=""  className='flex items-center'>
+        <div>
+          HOTEL.COM
+        </div>
+      </Link>
       <div className='flex justify-between min-w-[400px]'>
         <nav>
           <Button className='text-white'>List your property</Button>

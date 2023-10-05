@@ -10,7 +10,7 @@ const ReviewForm = ({setShowReviewForm}) => {
 
   return (
     <form onSubmit={reviewFormHandler} className='border border-gray-200 rounded p-3'>
-        <div className="flex flex-col">
+        <div className="flex flex-col text-gray-600">
             <div className="mt-3 flex flex-col">
                 <label htmlFor="" className='text-gray-600'>Review title</label>
                 <input type="text" className='border border-gray-300 bg-white'/>
@@ -20,7 +20,7 @@ const ReviewForm = ({setShowReviewForm}) => {
                 <textarea type="text" className='border border-gray-300 bg-white'/>
             </div>
             <div className="mt-3 flex flex-col">
-                <label htmlFor="">Rate</label>
+                <label htmlFor="">Give Ratings</label>
                 <Rating
                     name="simple-controlled"
                     value={value}
@@ -29,7 +29,7 @@ const ReviewForm = ({setShowReviewForm}) => {
                     }}
                 />
             </div>
-            <div className='mt-3 flex gap-3'>
+            <div className='mt-5 flex gap-3'>
                 <Button
                     variant='contained'
                     component={'button'}

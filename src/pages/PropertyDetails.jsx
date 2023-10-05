@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import DetailsMenu from '../components/propertyDetails/DetailsMenu'
+import Facilities from '../components/propertyDetails/Facilities'
+import Info from '../components/propertyDetails/Info'
 import PropertyImages from '../components/propertyDetails/PropertyImages'
 import Reviews from '../components/propertyDetails/Reviews'
 
@@ -10,6 +10,8 @@ const PropertyDetailsPage = () => {
         <DetailsMenu />
         <div className='content py-2'>
             <PropertyImages />
+            <Info />
+            <Facilities />
             <Reviews />
         </div>
     </section>

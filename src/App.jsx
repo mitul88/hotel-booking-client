@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import RootPage from './pages/Root';
 import { StyledEngineProvider } from '@mui/material';
 import PropertyListPage from './pages/PropertyList';
+import PropertyDetailsPage from './pages/PropertyDetails';
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
         {
           path: "rooms",
           element: <PropertyListPage />
+        },
+        {
+          path: "details",
+          element: <PropertyDetailsPage />
         }
       ]
   },

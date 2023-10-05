@@ -6,7 +6,7 @@ import Reviews from '../components/propertyDetails/Reviews'
 
 const PropertyDetailsPage = () => {
   return (
-    <section className='max-w-[1180px] mx-auto my-5 bg-white p-3'>
+    <section className='max-w-[1180px] mx-auto bg-white p-3'>
         <DetailsMenu />
         <div className='content py-2'>
             <PropertyImages />

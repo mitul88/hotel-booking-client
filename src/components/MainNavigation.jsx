@@ -1,10 +1,16 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Cart from './shared/Cart';
 
 const MainNavigation = () => {
+  const [showCart, setShowCart] = useState(false);
+
+  const toggleCart = () => {
+    setShowCart(!showCart)
+  }
   return (
-    <header className='w-screen h-[80px] flex flex-row justify-between px-20 py-5 bg-blue-900'>
+    <header className='relative w-screen h-[80px] flex flex-row justify-between px-20 py-5 bg-blue-900'>
       <Link to=""  className='flex items-center'>
         <div>
           HOTEL.COM
@@ -12,7 +18,7 @@ const MainNavigation = () => {
       </Link>
       <div className='flex justify-between min-w-[400px]'>
         <nav>
-          <Button className='text-white'>List your property</Button>
+          <Button onClick={toggleCart} className='text-white'>List your property</Button>
         </nav>
         <nav>
           <Button
@@ -31,6 +37,7 @@ const MainNavigation = () => {
           >Register</Button>
         </nav>
       </div>
+      {showCart && <Cart onClose={toggleCart} />}
     </header>
   )
 }

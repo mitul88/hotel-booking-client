@@ -15,7 +15,7 @@ const Facilities = () => {
             <h2 className="text-2xl text-gray-600 font-bold">Facilities</h2>
         </div>
         <hr className="border boder-gray-600" />
-        <div className="md:ml-5 w-full">
+        <div className="md:ml-10 w-full py-5">
             <div className='w-full p-3'>
                 {/* <h4 className="text-lg text-gray-600 font-bold pt-3">Offered facilities</h4> */}
                 <div className='flex flex-wrap items-center gap-10 gap-y-3 my-3 font-semibold'>

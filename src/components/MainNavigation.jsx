@@ -1,4 +1,4 @@
-import { Button } from '@mui/material'
+import { Badge, Button } from '@mui/material'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Cart from './shared/Cart';
@@ -18,7 +18,9 @@ const MainNavigation = () => {
       </Link>
       <div className='flex justify-between min-w-[400px]'>
         <nav>
-          <Button onClick={toggleCart} className='text-white'>List your property</Button>
+          <Badge badgeContent={2} color='error'>
+            <Button variant='outlined' onClick={toggleCart} className='text-white'>Your bookings</Button>
+          </Badge>
         </nav>
         <nav>
           <Button

@@ -4,6 +4,8 @@ import RootPage from './pages/Root';
 import { StyledEngineProvider } from '@mui/material';
 import PropertyListPage from './pages/PropertyList';
 import PropertyDetailsPage from './pages/PropertyDetails';
+import CheckoutPage from './pages/Checkout';
+import Profile from './pages/Profile';
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +23,15 @@ export const router = createBrowserRouter([
         {
           path: "details",
           element: <PropertyDetailsPage />
-        }
+        },
+        {
+          path: "checkout",
+          element: <CheckoutPage />
+        },
+        {
+          path: "profile",
+          element: <Profile />
+        },
       ]
   },
 ])

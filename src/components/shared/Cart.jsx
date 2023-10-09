@@ -3,7 +3,7 @@ import { MdClose } from "react-icons/md";
 
 const Cart = ({onClose}) => {
   return (
-    <div className=' p-5 absolute right-10 top-20 border border-gray-600 bg-white text-gray-600'>
+    <div className='z-50 p-5 absolute right-10 top-20 border border-gray-600 bg-white text-gray-600'>
         
         <div className='flex gap-5 items-center p-5 border-b border-gray-600 w-full'>
             <div>
@@ -31,7 +31,7 @@ const Cart = ({onClose}) => {
 
         <div className='flex gap-5 justify-center pt-5 p-2'>
             <Button variant='contained' size='small' className='bg-green-600 hover:bg-green-500 ease-out 300' disableElevation>
-                confirm
+                checkout
             </Button>
             <Button 
                 variant='contained' 

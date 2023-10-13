@@ -3,7 +3,8 @@ import { MdClose } from "react-icons/md";
 
 const Cart = ({onClose}) => {
   return (
-    <div className='z-50 p-5 absolute right-10 top-20 border border-gray-600 bg-white text-gray-600'>
+    // <div className='z-50 p-5 absolute right-10 top-20 border border-gray-600 bg-white text-gray-600'>
+    <div className='text-gray-600'>
         
         <div className='flex gap-5 items-center p-5 border-b border-gray-600 w-full'>
             <div>

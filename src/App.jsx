@@ -6,6 +6,7 @@ import PropertyListPage from './pages/PropertyList';
 import PropertyDetailsPage from './pages/PropertyDetails';
 import CheckoutPage from './pages/Checkout';
 import Profile from './pages/Profile';
+import AuthPage from './pages/Auth';
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
         },
       ]
   },
+  {
+    path: 'auth',
+    element: <AuthPage />
+  }
 ])
 
 function App() {
